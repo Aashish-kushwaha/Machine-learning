@@ -62,4 +62,29 @@ print(arr0[:,3]) #last column
 print(arr0[:,-1]) #last column
 
 
+# reshaping and flatting
+print(arr0.shape)
+print(arr0.reshape(1,8))
+print(arr0.reshape(4,2))
+print(arr0.reshape(8,1))
 print()
+# remove all the dimension
+print(arr0.flatten())
+
+# random array
+arr9=np.arange(10)
+print(arr9)
+arr2=np.arange(2,10)
+print(arr2)
+arr4=np.arange(0,10,3)
+print(arr4)
+arr6=np.arange(10,0,-1)
+print(arr6)
+
+arr7=np.linspace(1,10,3)
+print(arr7)
+
+# unique values and count
+arr8=[[1,1,2,3,45,2,1],[12,3,3,45,7,6,8]]
+print(np.unique(arr8))
+print(np.unique(arr8,return_counts=True))
